@@ -1,2 +1,2 @@
 #!/bin/bash
-paste - - < /dev/stdin'
+nl -ba | cut -f2
