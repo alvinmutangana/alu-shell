@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-awk '{printf substr($0,1,1)} END{print ""}'
+#!/bin/bash
+while read line; do printf "%s" "${line:0:1}"; done; echo
