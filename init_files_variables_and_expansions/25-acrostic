@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+awk '{printf substr($0,1,1)} END{print ""}'
