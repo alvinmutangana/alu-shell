@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script groups Apache log data by IP and HTTP code, counting occurrences
+
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr
